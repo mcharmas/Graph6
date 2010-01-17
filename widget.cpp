@@ -20,6 +20,15 @@ Widget::Widget(QWidget *parent) :
     connect(ui->scaleYSlider, SIGNAL(valueChanged(int)), pic, SLOT(setScaleY(int)));
     connect(ui->scaleZSlider, SIGNAL(valueChanged(int)), pic, SLOT(setScaleZ(int)));
 
+    connect(ui->distanceSlider, SIGNAL(valueChanged(int)), pic, SLOT(setDistance(int)));
+    connect(ui->kaSlider, SIGNAL(valueChanged(int)), pic, SLOT(setKa(int)));
+    connect(ui->kdSlider, SIGNAL(valueChanged(int)), pic, SLOT(setKd(int)));
+    connect(ui->ksSlider, SIGNAL(valueChanged(int)), pic, SLOT(setKs(int)));
+    connect(ui->lightXSlider, SIGNAL(valueChanged(int)), pic, SLOT(setLightX(int)));
+    connect(ui->lightYSlider, SIGNAL(valueChanged(int)), pic, SLOT(setLightY(int)));
+    connect(ui->lightZSlider, SIGNAL(valueChanged(int)), pic, SLOT(setLightZ(int)));
+
+
     QVBoxLayout *l = new QVBoxLayout(ui->frame);
     l->addWidget(pic);
 }

@@ -6,8 +6,10 @@ TEMPLATE = app
 SOURCES += main.cpp \
     widget.cpp \
     picture.cpp \
-    triangle.cpp
+    triangle.cpp \
+    triangle2d.cpp
 HEADERS += widget.h \
     picture.h \
-    triangle.h
+    triangle.h \
+    triangle2d.h
 FORMS += widget.ui

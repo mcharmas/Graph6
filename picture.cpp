@@ -8,10 +8,12 @@ Picture::Picture(QWidget *parent) :
 {
     picture = QImage(600, 400, QImage::Format_ARGB32);
     picture.fill(qRgb(255,255,255));
-    //drawAxis();
     triangles = QList<Triangle*>();
-//    triangles.append(new Triangle(QVector4D(5,5,5,1), QVector4D(80,0,0,1), QVector4D(0,80,0,1), this));
     generateSphere();
+    distance = 2;
+    Ka = 0.5;
+    Kd = 0.5;
+    Ks = 0.5;
 }
 
 void Picture::paintEvent(QPaintEvent *)
@@ -33,47 +35,79 @@ QImage Picture::renderTriangles()
 
     bool dupa;
     QMatrix4x4 transform = translate.inverted(&dupa) * scale.inverted(&dupa) * rX.inverted(&dupa) * rY.inverted(&dupa) * rZ.inverted(&dupa);
-
-    QPainter painter(&tmp);
-    QPen pen(Qt::green, 1, Qt::SolidLine, Qt::RoundCap, Qt::RoundJoin);
-    painter.setPen(pen);
-
+    //transformowanie
+    QList<Triangle> trans;
     for(QList<Triangle*>::iterator it = triangles.begin(); it != triangles.end(); it++)
     {
-
         QVector4D np1((*it)->p1 * transform);
         QVector4D np2((*it)->p2 * transform);
-        QVector4D np3((*it)->p3 * transform);
+        QVector4D np3((*it)->p3 * transform);        
+        Triangle t = Triangle(np1, np2, np3, (*it)->isUpsideDown);
+        trans.append(t);
+    }
 
-        painter.drawLine(projectPoint(np1), projectPoint(np2));
-        painter.drawLine(projectPoint(np1), projectPoint(np3));
-        painter.drawLine(projectPoint(np2), projectPoint(np3));
+
+    //rysowanie
+
+    QPainter painter(&tmp);
+
+
+    QVector3D l(light); //vektor swiatla
+    double Ia = 0.5;//naterzenie swiatla
+    QColor color(255,255,0);//wejsciowy kolor kuli
+    //qSort(trans.begin(), trans.end());
+    for(QList<Triangle>::iterator it = trans.begin(); it != trans.end(); it++)
+    {
+        Triangle t3d(*it);
+        if (qMin(qMin(t3d.p1.z(),t3d.p2.z()),t3d.p3.z()) < -5)
+            continue;
+        //qDebug() << t3d.p1 << t3d.p2 << t3d.p3;
+        double I = Ka * Ia + (Kd * (angle(t3d.normal(), l))) / distance;
+        QColor c(color.red()*I, color.green()*I, color.blue()*I);
+        //qDebug() << I ;
+
+        QPen pen(c, 1, Qt::SolidLine, Qt::RoundCap, Qt::RoundJoin);
+        QBrush brush(c);
+        painter.setPen(pen);
+        painter.setBrush(brush);
+
+        Triangle2D t(projectPoint(t3d.p1), projectPoint(t3d.p2), projectPoint(t3d.p3));
+        t.draw(&painter);
     }
 
     return tmp;
 }
 
+double Picture::angle(QVector3D v1, QVector3D v2)
+{
+    return QVector3D::dotProduct(v1, v2) / (v1.length() * v2.length());
+}
+
 QVector4D Picture::getPointOnSphere(double alpha, double beta, double r)
 {
     QVector4D p(0,r,0,1);
-    //QMatrix4x4 translate = getTranslateMatrix(r, 0, 0);
     QMatrix4x4 rX = getRotateMatrixX((double)beta * PI / 180);
-    QMatrix4x4 rY = getRotateMatrixY((double)alpha * PI / 180);
-    qDebug() << p << p*rX;
+    QMatrix4x4 rY = getRotateMatrixY((double)alpha * PI / 180);    
     QMatrix4x4 transform(rX * rY);
 
     return p * transform;
 }
 
 void Picture::generateSphere()
-{    
+{
     for (int i=0; i<360; i+=15)
     {
         for (int j=0; j<180; j+=15)
         {
-            Triangle *n = new Triangle(getPointOnSphere(i, j, 100),getPointOnSphere(i+15, j, 100),getPointOnSphere(i+7.5, j+15, 100), this);
-            n->debug();
-            triangles.append(n);
+            QVector4D p00(getPointOnSphere(i, j, 100));
+            QVector4D pRG(getPointOnSphere(i+7.5, j+15, 100));
+            QVector4D pLG(getPointOnSphere(i-7.5, j+15, 100));
+            QVector4D pLD(getPointOnSphere(i+15, j, 100));
+            Triangle *n1 = new Triangle(p00 ,pLD ,pRG, this);
+            Triangle *n2 = new Triangle(p00, pRG, pLG, this);
+            n2->isUpsideDown = false;
+            triangles.append(n1);
+            triangles.append(n2);
         }
     }
 }
@@ -155,7 +189,7 @@ QPointF Picture::projectPoint(QVector4D p)
     p.setX((-p.x()) + picture.width()/2);
     p.setZ(p.z());
 
-    double d = 1000;
+    double d = 1200;
     double x = (p.x() * d) / (p.z() + d);
     double y = (p.y() * d) / (p.z() + d);
 

@@ -81,7 +81,7 @@
     <value type="QString">CONFIG_PROTECT=/usr/share/X11/xkb /var/lib/hsqldb /usr/share/config</value>
     <value type="QString">CONFIG_PROTECT_MASK=/etc/sandbox.d /etc/env.d/java/ /etc/udev/rules.d /etc/fonts/fonts.conf /etc/gconf /etc/terminfo /etc/ca-certificates.conf /etc/revdep-rebuild</value>
     <value type="QString">CVS_RSH=ssh</value>
-    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-4KxKVakuu4,guid=8786cb753f72688d2733f0c44b3fdd6b</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-4wJFm3EtWB,guid=4a7d9b5c494e8f98b2c83a834b44b1cf</value>
     <value type="QString">DESKTOP_SESSION=default</value>
     <value type="QString">DISPLAY=:0.0</value>
     <value type="QString">DM_CONTROL=/var/run/xdmctl</value>
@@ -118,7 +118,7 @@
     <value type="QString">QTDIR=/usr/share/qt4</value>
     <value type="QString">QT_PLUGIN_PATH=/home/orbit/.kde4/lib64/kde4/plugins/:/usr/lib64/kde4/plugins/</value>
     <value type="QString">SANE_CONFIG_DIR=/etc/sane.d</value>
-    <value type="QString">SESSION_MANAGER=local/0r81t:@/tmp/.ICE-unix/18409,unix/0r81t:/tmp/.ICE-unix/18409</value>
+    <value type="QString">SESSION_MANAGER=local/0r81t:@/tmp/.ICE-unix/17960,unix/0r81t:/tmp/.ICE-unix/17960</value>
     <value type="QString">SHELL=/bin/bash</value>
     <value type="QString">SHLVL=1</value>
     <value type="QString">STRIGI_PLUGIN_PATH=/usr/lib64/strigi:</value>
@@ -128,12 +128,12 @@
     <value type="QString">XCURSOR_THEME=Oxygen_Black</value>
     <value type="QString">XDG_CONFIG_DIRS=/etc/xdg</value>
     <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/local/share:/usr/share</value>
-    <value type="QString">XDG_SESSION_COOKIE=9f261a3b9c9fa621ba477e074a954278-1262476651.433315-494959719</value>
+    <value type="QString">XDG_SESSION_COOKIE=9f261a3b9c9fa621ba477e074a954278-1262793167.65037-1676528483</value>
     <value type="QString">XDM_MANAGED=method=classic</value>
     <value type="QString">_=/usr/bin/kdeinit4</value>
    </valuelist>
    <valuelist key="abstractProcess.arguments" type="QVariantList">
-    <value type="QString">/home/orbit/Graph5/Graph5.pro</value>
+    <value type="QString">/home/orbit/Graph6/Graph5.pro</value>
     <value type="QString">-spec</value>
     <value type="QString">linux-g++</value>
     <value type="QString">-r</value>
@@ -141,7 +141,7 @@
    </valuelist>
    <value key="abstractProcess.command" type="QString">/usr/bin/qmake</value>
    <value key="abstractProcess.enabled" type="bool">false</value>
-   <value key="abstractProcess.workingDirectory" type="QString">/home/orbit/Graph5</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/orbit/Graph6</value>
   </valuemap>
  </data>
  <data>
@@ -154,7 +154,7 @@
     <value type="QString">CONFIG_PROTECT=/usr/share/X11/xkb /var/lib/hsqldb /usr/share/config</value>
     <value type="QString">CONFIG_PROTECT_MASK=/etc/sandbox.d /etc/env.d/java/ /etc/udev/rules.d /etc/fonts/fonts.conf /etc/gconf /etc/terminfo /etc/ca-certificates.conf /etc/revdep-rebuild</value>
     <value type="QString">CVS_RSH=ssh</value>
-    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-4KxKVakuu4,guid=8786cb753f72688d2733f0c44b3fdd6b</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-4wJFm3EtWB,guid=4a7d9b5c494e8f98b2c83a834b44b1cf</value>
     <value type="QString">DESKTOP_SESSION=default</value>
     <value type="QString">DISPLAY=:0.0</value>
     <value type="QString">DM_CONTROL=/var/run/xdmctl</value>
@@ -191,7 +191,7 @@
     <value type="QString">QTDIR=/usr/share/qt4</value>
     <value type="QString">QT_PLUGIN_PATH=/home/orbit/.kde4/lib64/kde4/plugins/:/usr/lib64/kde4/plugins/</value>
     <value type="QString">SANE_CONFIG_DIR=/etc/sane.d</value>
-    <value type="QString">SESSION_MANAGER=local/0r81t:@/tmp/.ICE-unix/18409,unix/0r81t:/tmp/.ICE-unix/18409</value>
+    <value type="QString">SESSION_MANAGER=local/0r81t:@/tmp/.ICE-unix/17960,unix/0r81t:/tmp/.ICE-unix/17960</value>
     <value type="QString">SHELL=/bin/bash</value>
     <value type="QString">SHLVL=1</value>
     <value type="QString">STRIGI_PLUGIN_PATH=/usr/lib64/strigi:</value>
@@ -201,7 +201,7 @@
     <value type="QString">XCURSOR_THEME=Oxygen_Black</value>
     <value type="QString">XDG_CONFIG_DIRS=/etc/xdg</value>
     <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/local/share:/usr/share</value>
-    <value type="QString">XDG_SESSION_COOKIE=9f261a3b9c9fa621ba477e074a954278-1262476651.433315-494959719</value>
+    <value type="QString">XDG_SESSION_COOKIE=9f261a3b9c9fa621ba477e074a954278-1262793167.65037-1676528483</value>
     <value type="QString">XDM_MANAGED=method=classic</value>
     <value type="QString">_=/usr/bin/kdeinit4</value>
    </valuelist>
@@ -211,7 +211,7 @@
    </valuelist>
    <value key="abstractProcess.command" type="QString">/usr/bin/make</value>
    <value key="abstractProcess.enabled" type="bool">true</value>
-   <value key="abstractProcess.workingDirectory" type="QString">/home/orbit/Graph5</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/orbit/Graph6</value>
   </valuemap>
  </data>
  <data>
@@ -224,7 +224,7 @@
     <value type="QString">CONFIG_PROTECT=/usr/share/X11/xkb /var/lib/hsqldb /usr/share/config</value>
     <value type="QString">CONFIG_PROTECT_MASK=/etc/sandbox.d /etc/env.d/java/ /etc/udev/rules.d /etc/fonts/fonts.conf /etc/gconf /etc/terminfo /etc/ca-certificates.conf /etc/revdep-rebuild</value>
     <value type="QString">CVS_RSH=ssh</value>
-    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-4KxKVakuu4,guid=8786cb753f72688d2733f0c44b3fdd6b</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-4wJFm3EtWB,guid=4a7d9b5c494e8f98b2c83a834b44b1cf</value>
     <value type="QString">DESKTOP_SESSION=default</value>
     <value type="QString">DISPLAY=:0.0</value>
     <value type="QString">DM_CONTROL=/var/run/xdmctl</value>
@@ -261,7 +261,7 @@
     <value type="QString">QTDIR=/usr/share/qt4</value>
     <value type="QString">QT_PLUGIN_PATH=/home/orbit/.kde4/lib64/kde4/plugins/:/usr/lib64/kde4/plugins/</value>
     <value type="QString">SANE_CONFIG_DIR=/etc/sane.d</value>
-    <value type="QString">SESSION_MANAGER=local/0r81t:@/tmp/.ICE-unix/18409,unix/0r81t:/tmp/.ICE-unix/18409</value>
+    <value type="QString">SESSION_MANAGER=local/0r81t:@/tmp/.ICE-unix/17960,unix/0r81t:/tmp/.ICE-unix/17960</value>
     <value type="QString">SHELL=/bin/bash</value>
     <value type="QString">SHLVL=1</value>
     <value type="QString">STRIGI_PLUGIN_PATH=/usr/lib64/strigi:</value>
@@ -271,7 +271,7 @@
     <value type="QString">XCURSOR_THEME=Oxygen_Black</value>
     <value type="QString">XDG_CONFIG_DIRS=/etc/xdg</value>
     <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/local/share:/usr/share</value>
-    <value type="QString">XDG_SESSION_COOKIE=9f261a3b9c9fa621ba477e074a954278-1262476651.433315-494959719</value>
+    <value type="QString">XDG_SESSION_COOKIE=9f261a3b9c9fa621ba477e074a954278-1262793167.65037-1676528483</value>
     <value type="QString">XDM_MANAGED=method=classic</value>
     <value type="QString">_=/usr/bin/kdeinit4</value>
    </valuelist>
@@ -282,7 +282,7 @@
    </valuelist>
    <value key="abstractProcess.command" type="QString">/usr/bin/make</value>
    <value key="abstractProcess.enabled" type="bool">true</value>
-   <value key="abstractProcess.workingDirectory" type="QString">/home/orbit/Graph5</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/orbit/Graph6</value>
    <value key="cleanConfig" type="bool">true</value>
    <valuelist key="makeargs" type="QVariantList">
     <value type="QString">clean</value>
