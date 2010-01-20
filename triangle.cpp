@@ -42,3 +42,11 @@ bool Triangle::operator<(Triangle t) const
 {
     return this->p1.z() > t.p1.z();
 }
+
+bool Triangle::eq(QVector4D p1, QVector4D p2)
+{
+    QVector4D p = p1 - p2;
+    if (p.length() < 2)
+        return true;
+    return false;
+}

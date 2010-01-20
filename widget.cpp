@@ -26,6 +26,7 @@ Widget::Widget(QWidget *parent) :
     connect(ui->lightXSlider, SIGNAL(valueChanged(int)), pic, SLOT(setLightX(int)));
     connect(ui->lightYSlider, SIGNAL(valueChanged(int)), pic, SLOT(setLightY(int)));
     connect(ui->lightZSlider, SIGNAL(valueChanged(int)), pic, SLOT(setLightZ(int)));
+    connect(ui->typeSlider, SIGNAL(valueChanged(int)), pic, SLOT(setType(int)));
 
 
     QVBoxLayout *l = new QVBoxLayout(ui->frame);

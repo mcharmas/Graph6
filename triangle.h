@@ -20,12 +20,14 @@ public:
     Triangle operator=(const Triangle&);
     bool operator<(Triangle) const;
     bool isUpsideDown;
+    bool has(QVector4D p) { return (eq(p,p1) || eq(p,p2) || eq(p,p3)); }
 
 signals:
 
 public slots:
 
 private:
+    bool eq(QVector4D, QVector4D);
 
 
 

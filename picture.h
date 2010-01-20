@@ -45,6 +45,8 @@ public slots:
     void setLightY(int x) {lightPosition.setY(x); update();}
     void setLightZ(int x) {lightPosition.setZ(x); update();}
 
+    void setType(int x) {this->type = x%4; update(); }
+
 
 private:
     QImage picture;
@@ -58,6 +60,10 @@ private:
     //oswietlenie
     double distance;
     double Ka, Kd, Ks;
+    double Ia;
+    double m;
+    int type;
+    QColor color;
     QVector4D lightPosition;
 
     //widok
@@ -65,6 +71,9 @@ private:
     int sceneAngleY;
     QVector4D viewerPosition;
 
+    //funkcje oswietlenia
+    QColor gouraud(QVector<Triangle*> trans, QVector4D p, QVector4D lPos, QVector4D viewerPos);
+    QColor flat(Triangle *t3d, QVector4D lPos, QVector4D viewerPos);
 
     //funkcje translacji
     QMatrix4x4 getRotateMatrixX(double x);
