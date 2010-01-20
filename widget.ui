@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1088</width>
-    <height>739</height>
+    <height>740</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -115,26 +115,26 @@
       <item>
        <widget class="QGroupBox" name="groupBox_2">
         <property name="title">
-         <string>Skalowanie</string>
+         <string>Kąt sceny</string>
         </property>
         <layout class="QGridLayout" name="gridLayout_2">
          <item row="0" column="0">
-          <widget class="QLabel" name="label_4">
+          <widget class="QLabel" name="label_5">
            <property name="text">
-            <string>X</string>
+            <string>Pion</string>
            </property>
           </widget>
          </item>
          <item row="0" column="1">
-          <widget class="QSlider" name="scaleXSlider">
+          <widget class="QSlider" name="scaleYSlider">
            <property name="minimum">
-            <number>1</number>
+            <number>-180</number>
            </property>
            <property name="maximum">
-            <number>200</number>
+            <number>180</number>
            </property>
            <property name="value">
-            <number>100</number>
+            <number>0</number>
            </property>
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
@@ -142,52 +142,29 @@
           </widget>
          </item>
          <item row="1" column="0">
-          <widget class="QLabel" name="label_5">
+          <widget class="QLabel" name="label_6">
            <property name="text">
-            <string>Y</string>
+            <string>Poziom</string>
            </property>
           </widget>
          </item>
          <item row="1" column="1">
-          <widget class="QSlider" name="scaleYSlider">
+          <widget class="QSlider" name="scaleZSlider">
            <property name="minimum">
-            <number>1</number>
+            <number>0</number>
            </property>
            <property name="maximum">
-            <number>200</number>
+            <number>360</number>
            </property>
            <property name="value">
-            <number>100</number>
+            <number>0</number>
            </property>
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
-          <widget class="QLabel" name="label_6">
-           <property name="text">
-            <string>Z</string>
            </property>
           </widget>
          </item>
          <item row="2" column="1">
-          <widget class="QSlider" name="scaleZSlider">
-           <property name="minimum">
-            <number>1</number>
-           </property>
-           <property name="maximum">
-            <number>200</number>
-           </property>
-           <property name="value">
-            <number>100</number>
-           </property>
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="1">
           <spacer name="verticalSpacer_2">
            <property name="orientation">
             <enum>Qt::Vertical</enum>
@@ -327,10 +304,10 @@
          <item row="8" column="1">
           <widget class="QSlider" name="lightXSlider">
            <property name="minimum">
-            <number>-10</number>
+            <number>-200</number>
            </property>
            <property name="maximum">
-            <number>10</number>
+            <number>200</number>
            </property>
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
@@ -340,10 +317,10 @@
          <item row="9" column="1">
           <widget class="QSlider" name="lightYSlider">
            <property name="minimum">
-            <number>-10</number>
+            <number>-200</number>
            </property>
            <property name="maximum">
-            <number>10</number>
+            <number>200</number>
            </property>
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
@@ -353,10 +330,13 @@
          <item row="10" column="1">
           <widget class="QSlider" name="lightZSlider">
            <property name="minimum">
-            <number>-10</number>
+            <number>-200</number>
            </property>
            <property name="maximum">
-            <number>10</number>
+            <number>200</number>
+           </property>
+           <property name="singleStep">
+            <number>1</number>
            </property>
            <property name="orientation">
             <enum>Qt::Horizontal</enum>

@@ -16,7 +16,6 @@ Widget::Widget(QWidget *parent) :
     connect(ui->rotateYSlider, SIGNAL(valueChanged(int)), pic, SLOT(setRotateY(int)));
     connect(ui->rotateZSlider, SIGNAL(valueChanged(int)), pic, SLOT(setRotateZ(int)));
 
-    connect(ui->scaleXSlider, SIGNAL(valueChanged(int)), pic, SLOT(setScaleX(int)));
     connect(ui->scaleYSlider, SIGNAL(valueChanged(int)), pic, SLOT(setScaleY(int)));
     connect(ui->scaleZSlider, SIGNAL(valueChanged(int)), pic, SLOT(setScaleZ(int)));
 

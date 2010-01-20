@@ -77,15 +77,15 @@
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList">
     <value type="QString">ANT_HOME=/usr/share/ant</value>
-    <value type="QString">COLON_SEPARATED=XDG_DATA_DIRS XDG_CONFIG_DIRS</value>
     <value type="QString">CONFIG_PROTECT=/usr/share/X11/xkb /var/lib/hsqldb /usr/share/config</value>
     <value type="QString">CONFIG_PROTECT_MASK=/etc/sandbox.d /etc/env.d/java/ /etc/udev/rules.d /etc/fonts/fonts.conf /etc/gconf /etc/terminfo /etc/ca-certificates.conf /etc/revdep-rebuild</value>
     <value type="QString">CVS_RSH=ssh</value>
-    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-4wJFm3EtWB,guid=4a7d9b5c494e8f98b2c83a834b44b1cf</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-0bVWRIQY2b,guid=44ca9b1ebea33aecf423064e4b55a03d</value>
     <value type="QString">DESKTOP_SESSION=default</value>
     <value type="QString">DISPLAY=:0.0</value>
     <value type="QString">DM_CONTROL=/var/run/xdmctl</value>
     <value type="QString">EDITOR=/usr/bin/vim</value>
+    <value type="QString">GCC_SPECS=</value>
     <value type="QString">GDK_USE_XFT=1</value>
     <value type="QString">GS_LIB=/home/orbit/.fonts</value>
     <value type="QString">GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/orbit/.gtkrc-2.0:/home/orbit/.gtkrc-2.0-kde4:/home/orbit/.kde4/share/config/gtkrc-2.0</value>
@@ -102,9 +102,7 @@
     <value type="QString">KDE_SESSION_UID=1000</value>
     <value type="QString">KDE_SESSION_VERSION=4</value>
     <value type="QString">LANG=pl_PL</value>
-    <value type="QString">LANGUAGE=</value>
     <value type="QString">LC_ALL=pl_PL.UTF-8</value>
-    <value type="QString">LDPATH=/usr/local/lib:/usr/lib32/opengl/nvidia/lib:/usr/lib64/opengl/nvidia/lib:/lib:/usr/lib:/lib64:/usr/lib64:/usr/local/lib64:/lib32:/usr/lib32:/usr/local/lib32:/usr/x86_64-pc-linux-gnu/lib:/usr/lib/gcc/x86_64-pc-linux-gnu/4.3.4:/usr/lib/gcc/x86_64-pc-linux-gnu/4.3.4/32:/usr/lib64/nspr:/usr/lib64/nss:/usr/lib64/xulrunner-1.9.1:/usr/lib64/qca2:/usr/lib/qt4:/usr/lib64/qt4:/usr/lib32/qt4:/usr/qt/3/lib:/usr/qt/3/lib64:/usr/qt/3/lib32:/usr/games/lib:/usr/games/lib64:/usr/games/lib32:/opt/flash-libcompat:/usr/lib32/libstdc++-v3/</value>
     <value type="QString">LESS=-R -M --shift 5</value>
     <value type="QString">LESSOPEN=|lesspipe.sh %s</value>
     <value type="QString">LOGNAME=orbit</value>
@@ -118,7 +116,7 @@
     <value type="QString">QTDIR=/usr/share/qt4</value>
     <value type="QString">QT_PLUGIN_PATH=/home/orbit/.kde4/lib64/kde4/plugins/:/usr/lib64/kde4/plugins/</value>
     <value type="QString">SANE_CONFIG_DIR=/etc/sane.d</value>
-    <value type="QString">SESSION_MANAGER=local/0r81t:@/tmp/.ICE-unix/17960,unix/0r81t:/tmp/.ICE-unix/17960</value>
+    <value type="QString">SESSION_MANAGER=local/0r81t:@/tmp/.ICE-unix/10476,unix/0r81t:/tmp/.ICE-unix/10476</value>
     <value type="QString">SHELL=/bin/bash</value>
     <value type="QString">SHLVL=1</value>
     <value type="QString">STRIGI_PLUGIN_PATH=/usr/lib64/strigi:</value>
@@ -128,7 +126,7 @@
     <value type="QString">XCURSOR_THEME=Oxygen_Black</value>
     <value type="QString">XDG_CONFIG_DIRS=/etc/xdg</value>
     <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/local/share:/usr/share</value>
-    <value type="QString">XDG_SESSION_COOKIE=9f261a3b9c9fa621ba477e074a954278-1262793167.65037-1676528483</value>
+    <value type="QString">XDG_SESSION_COOKIE=9f261a3b9c9fa621ba477e074a954278-1263902780.994174-1832117532</value>
     <value type="QString">XDM_MANAGED=method=classic</value>
     <value type="QString">_=/usr/bin/kdeinit4</value>
    </valuelist>
@@ -150,15 +148,15 @@
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList">
     <value type="QString">ANT_HOME=/usr/share/ant</value>
-    <value type="QString">COLON_SEPARATED=XDG_DATA_DIRS XDG_CONFIG_DIRS</value>
     <value type="QString">CONFIG_PROTECT=/usr/share/X11/xkb /var/lib/hsqldb /usr/share/config</value>
     <value type="QString">CONFIG_PROTECT_MASK=/etc/sandbox.d /etc/env.d/java/ /etc/udev/rules.d /etc/fonts/fonts.conf /etc/gconf /etc/terminfo /etc/ca-certificates.conf /etc/revdep-rebuild</value>
     <value type="QString">CVS_RSH=ssh</value>
-    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-4wJFm3EtWB,guid=4a7d9b5c494e8f98b2c83a834b44b1cf</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-0bVWRIQY2b,guid=44ca9b1ebea33aecf423064e4b55a03d</value>
     <value type="QString">DESKTOP_SESSION=default</value>
     <value type="QString">DISPLAY=:0.0</value>
     <value type="QString">DM_CONTROL=/var/run/xdmctl</value>
     <value type="QString">EDITOR=/usr/bin/vim</value>
+    <value type="QString">GCC_SPECS=</value>
     <value type="QString">GDK_USE_XFT=1</value>
     <value type="QString">GS_LIB=/home/orbit/.fonts</value>
     <value type="QString">GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/orbit/.gtkrc-2.0:/home/orbit/.gtkrc-2.0-kde4:/home/orbit/.kde4/share/config/gtkrc-2.0</value>
@@ -175,9 +173,7 @@
     <value type="QString">KDE_SESSION_UID=1000</value>
     <value type="QString">KDE_SESSION_VERSION=4</value>
     <value type="QString">LANG=pl_PL</value>
-    <value type="QString">LANGUAGE=</value>
     <value type="QString">LC_ALL=pl_PL.UTF-8</value>
-    <value type="QString">LDPATH=/usr/local/lib:/usr/lib32/opengl/nvidia/lib:/usr/lib64/opengl/nvidia/lib:/lib:/usr/lib:/lib64:/usr/lib64:/usr/local/lib64:/lib32:/usr/lib32:/usr/local/lib32:/usr/x86_64-pc-linux-gnu/lib:/usr/lib/gcc/x86_64-pc-linux-gnu/4.3.4:/usr/lib/gcc/x86_64-pc-linux-gnu/4.3.4/32:/usr/lib64/nspr:/usr/lib64/nss:/usr/lib64/xulrunner-1.9.1:/usr/lib64/qca2:/usr/lib/qt4:/usr/lib64/qt4:/usr/lib32/qt4:/usr/qt/3/lib:/usr/qt/3/lib64:/usr/qt/3/lib32:/usr/games/lib:/usr/games/lib64:/usr/games/lib32:/opt/flash-libcompat:/usr/lib32/libstdc++-v3/</value>
     <value type="QString">LESS=-R -M --shift 5</value>
     <value type="QString">LESSOPEN=|lesspipe.sh %s</value>
     <value type="QString">LOGNAME=orbit</value>
@@ -191,7 +187,7 @@
     <value type="QString">QTDIR=/usr/share/qt4</value>
     <value type="QString">QT_PLUGIN_PATH=/home/orbit/.kde4/lib64/kde4/plugins/:/usr/lib64/kde4/plugins/</value>
     <value type="QString">SANE_CONFIG_DIR=/etc/sane.d</value>
-    <value type="QString">SESSION_MANAGER=local/0r81t:@/tmp/.ICE-unix/17960,unix/0r81t:/tmp/.ICE-unix/17960</value>
+    <value type="QString">SESSION_MANAGER=local/0r81t:@/tmp/.ICE-unix/10476,unix/0r81t:/tmp/.ICE-unix/10476</value>
     <value type="QString">SHELL=/bin/bash</value>
     <value type="QString">SHLVL=1</value>
     <value type="QString">STRIGI_PLUGIN_PATH=/usr/lib64/strigi:</value>
@@ -201,7 +197,7 @@
     <value type="QString">XCURSOR_THEME=Oxygen_Black</value>
     <value type="QString">XDG_CONFIG_DIRS=/etc/xdg</value>
     <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/local/share:/usr/share</value>
-    <value type="QString">XDG_SESSION_COOKIE=9f261a3b9c9fa621ba477e074a954278-1262793167.65037-1676528483</value>
+    <value type="QString">XDG_SESSION_COOKIE=9f261a3b9c9fa621ba477e074a954278-1263902780.994174-1832117532</value>
     <value type="QString">XDM_MANAGED=method=classic</value>
     <value type="QString">_=/usr/bin/kdeinit4</value>
    </valuelist>
@@ -220,15 +216,15 @@
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList">
     <value type="QString">ANT_HOME=/usr/share/ant</value>
-    <value type="QString">COLON_SEPARATED=XDG_DATA_DIRS XDG_CONFIG_DIRS</value>
     <value type="QString">CONFIG_PROTECT=/usr/share/X11/xkb /var/lib/hsqldb /usr/share/config</value>
     <value type="QString">CONFIG_PROTECT_MASK=/etc/sandbox.d /etc/env.d/java/ /etc/udev/rules.d /etc/fonts/fonts.conf /etc/gconf /etc/terminfo /etc/ca-certificates.conf /etc/revdep-rebuild</value>
     <value type="QString">CVS_RSH=ssh</value>
-    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-4wJFm3EtWB,guid=4a7d9b5c494e8f98b2c83a834b44b1cf</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-b08KlyOE9a,guid=ecc356bff02b65ab388670224b54340b</value>
     <value type="QString">DESKTOP_SESSION=default</value>
     <value type="QString">DISPLAY=:0.0</value>
     <value type="QString">DM_CONTROL=/var/run/xdmctl</value>
     <value type="QString">EDITOR=/usr/bin/vim</value>
+    <value type="QString">GCC_SPECS=</value>
     <value type="QString">GDK_USE_XFT=1</value>
     <value type="QString">GS_LIB=/home/orbit/.fonts</value>
     <value type="QString">GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/orbit/.gtkrc-2.0:/home/orbit/.gtkrc-2.0-kde4:/home/orbit/.kde4/share/config/gtkrc-2.0</value>
@@ -247,7 +243,6 @@
     <value type="QString">LANG=pl_PL</value>
     <value type="QString">LANGUAGE=</value>
     <value type="QString">LC_ALL=pl_PL.UTF-8</value>
-    <value type="QString">LDPATH=/usr/local/lib:/usr/lib32/opengl/nvidia/lib:/usr/lib64/opengl/nvidia/lib:/lib:/usr/lib:/lib64:/usr/lib64:/usr/local/lib64:/lib32:/usr/lib32:/usr/local/lib32:/usr/x86_64-pc-linux-gnu/lib:/usr/lib/gcc/x86_64-pc-linux-gnu/4.3.4:/usr/lib/gcc/x86_64-pc-linux-gnu/4.3.4/32:/usr/lib64/nspr:/usr/lib64/nss:/usr/lib64/xulrunner-1.9.1:/usr/lib64/qca2:/usr/lib/qt4:/usr/lib64/qt4:/usr/lib32/qt4:/usr/qt/3/lib:/usr/qt/3/lib64:/usr/qt/3/lib32:/usr/games/lib:/usr/games/lib64:/usr/games/lib32:/opt/flash-libcompat:/usr/lib32/libstdc++-v3/</value>
     <value type="QString">LESS=-R -M --shift 5</value>
     <value type="QString">LESSOPEN=|lesspipe.sh %s</value>
     <value type="QString">LOGNAME=orbit</value>
@@ -261,7 +256,7 @@
     <value type="QString">QTDIR=/usr/share/qt4</value>
     <value type="QString">QT_PLUGIN_PATH=/home/orbit/.kde4/lib64/kde4/plugins/:/usr/lib64/kde4/plugins/</value>
     <value type="QString">SANE_CONFIG_DIR=/etc/sane.d</value>
-    <value type="QString">SESSION_MANAGER=local/0r81t:@/tmp/.ICE-unix/17960,unix/0r81t:/tmp/.ICE-unix/17960</value>
+    <value type="QString">SESSION_MANAGER=local/0r81t:@/tmp/.ICE-unix/19105,unix/0r81t:/tmp/.ICE-unix/19105</value>
     <value type="QString">SHELL=/bin/bash</value>
     <value type="QString">SHLVL=1</value>
     <value type="QString">STRIGI_PLUGIN_PATH=/usr/lib64/strigi:</value>
@@ -271,7 +266,7 @@
     <value type="QString">XCURSOR_THEME=Oxygen_Black</value>
     <value type="QString">XDG_CONFIG_DIRS=/etc/xdg</value>
     <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/local/share:/usr/share</value>
-    <value type="QString">XDG_SESSION_COOKIE=9f261a3b9c9fa621ba477e074a954278-1262793167.65037-1676528483</value>
+    <value type="QString">XDG_SESSION_COOKIE=9f261a3b9c9fa621ba477e074a954278-1263809546.790606-1639952042</value>
     <value type="QString">XDM_MANAGED=method=classic</value>
     <value type="QString">_=/usr/bin/kdeinit4</value>
    </valuelist>

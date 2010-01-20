@@ -9,6 +9,7 @@
 #include <QDebug>
 #include <QList>
 #include <QtAlgorithms>
+#include <QVector3D>
 #include "triangle.h"
 #include "triangle2d.h"
 
@@ -19,6 +20,7 @@ public:
     explicit Picture(QWidget *parent = 0);
     void paintEvent(QPaintEvent *);
 
+
 signals:
 
 public slots:
@@ -27,8 +29,8 @@ public slots:
     void setTranslateZ(int x) { this->translateZ = x; update(); }
 
     void setScaleX(int x) { this->scaleX = x; update(); }
-    void setScaleY(int x) { this->scaleY = x; update(); }
-    void setScaleZ(int x) { this->scaleZ = x; update(); }
+    void setScaleY(int x) { this->sceneAngleX = x; update(); }
+    void setScaleZ(int x) { this->sceneAngleY = x; update(); }
 
     void setRotateX(int x) { this->rotateX = x; update(); }
     void setRotateY(int x) { this->rotateY = x; update(); }
@@ -39,38 +41,51 @@ public slots:
     void setKd(int x) { this->Kd = (double)x/100; update(); }
     void setKs(int x) { this->Ks = (double)x/100; update(); }
 
-    void setLightX(int x) {light.setX(x); update();}
-    void setLightY(int x) {light.setY(x); update();}
-    void setLightZ(int x) {light.setZ(x); update();}
+    void setLightX(int x) {lightPosition.setX(x); update();}
+    void setLightY(int x) {lightPosition.setY(x); update();}
+    void setLightZ(int x) {lightPosition.setZ(x); update();}
 
 
 private:
+    QImage picture;
+    QVector<Triangle*> triangles;
+
+    //translacje
     int translateX, translateY, translateZ;
     int scaleX, scaleY, scaleZ;
     int rotateX, rotateY, rotateZ;
+
+    //oswietlenie
     double distance;
     double Ka, Kd, Ks;
-    QVector3D light;
+    QVector4D lightPosition;
 
-    QImage picture;
-    QList<Triangle*> triangles;
+    //widok
+    int sceneAngleX;
+    int sceneAngleY;
+    QVector4D viewerPosition;
 
+
+    //funkcje translacji
     QMatrix4x4 getRotateMatrixX(double x);
     QMatrix4x4 getRotateMatrixY(double x);
     QMatrix4x4 getRotateMatrixZ(double x);
-
     QMatrix4x4 getTranslateMatrix(double x, double y, double z);
     QMatrix4x4 getScaleMatrix(double x, double y, double z);
 
-    QPointF projectPoint(QVector4D p);
 
+    //rotacja sceny
+    void rotateScene(QVector<Triangle*> &triangles, QVector4D &light, QVector4D &v);
+
+    //dodatkowe
     void drawAxis();
     QImage renderTriangles();
+    QPointF projectPoint(QVector4D p);
 
     //sphere
     QVector4D getPointOnSphere(double alpha, double beta, double r);
     void generateSphere();
-    double angle(QVector3D, QVector3D);
+    double angle(QVector3D, QVector3D);    
 
 };
 
